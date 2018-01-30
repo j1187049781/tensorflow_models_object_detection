@@ -7,7 +7,17 @@
 ## 数据
 * [method 1](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md)
 * method 2  
-1. 使用imglabel标注数据,生成pascal格式数据
+1. 使用imglabel标注数据,生成pascal格式数据  
+  × pascal 目录结构
+    + data (save pictures)
+    + VOC2012 
+        + Annotations
+        + ImageSets
+            + Main
+                - test.txt
+                - train.txt
+                - val.txt
+                - trainval.txt
 2. copy并修改data/label_map
 3. 使用dataset_tools/create_pascal_tf_record.py将1,2步的data,label_map生成tfrecord格式数据
 ## 训练
