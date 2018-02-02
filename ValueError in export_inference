@@ -1,0 +1,7 @@
+脚本运行时可能报错（ValueError:Protocol message RewriterConfig has no "layout_optimizer" field），可参考下面的方法修改
+
+注释掉object_detection下exporter.py文件的下面这行：#layout_optimizer=rewriter_config_pb2.RewriterConfig.ON)
+
+增加下面这行：
+
+optimize_tensor_layout=True)

@@ -1,0 +1,11 @@
+tensorflow-generative-model-collections
+https://github.com/hwalsuklee/tensorflow-generative-model-collections
+
+深度学习新星：GANs的基本原理、应用和走向
+http://blog.csdn.net/c2a2o2/article/details/54408072
+
+pip download \
+    --only-binary=:all: \
+    --platform linux_x86_64 \
+    --python-version 27 \
+    --implementation cp \
